@@ -1,0 +1,78 @@
+package estructurasdecontrol;
+
+public class Condicionales {
+
+    public void condicionElseif() {
+
+        int mes = 9;
+        String estacion = "estacion desconocida";
+
+        if (mes == 1 || mes == 2 || mes == 12) {
+            estacion = "invierno";
+        } else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "primavera";
+        } else if (mes == 6 || mes == 7 || mes == 8) {
+            estacion = "verano";
+        } else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "otoño";
+
+        }
+        System.out.println("estacion=" + estacion);
+
+    }
+
+    public void condicionalSwitch() {
+        int numero = 5;
+        String numerotexto = "valor desconocido";
+
+        switch (numero) {
+            case 1:
+                numerotexto = "numero uno";
+                break;
+            case 2:
+                numerotexto = "numero dos";
+                break;
+            case 3:
+                numerotexto = "numero tres";
+                break;
+            case 4:
+                numerotexto = "numero cuatro";
+                break;
+            default:
+                numerotexto = "caso no encontrado";
+                System.out.println("numerotexto" + numerotexto);
+        }
+    }
+    
+    public void condicionalConcadena(){
+            String desconocido = "fruta desconocida";
+            String fruta = "pera";
+            
+            switch (fruta){
+                case "pera":
+                    System.out.println("tu fruta es la pera");
+
+                   break;
+                    
+                case "pina":
+                    System.out.println("tu fruta es la pina");
+                    break;
+                case "mango":
+                    System.out.println("tu fruta es el mango");
+                    break;
+                    
+                case "guayaba":
+                    System.out.println("tu fruta es la guayaba");
+                    break;
+                   
+                 case "manzana":
+                    System.out.println("tu fruta es la manzana");
+                     break;
+                 default:
+                     fruta = "fruta no encontrada";
+                     System.out.println("fruta desconocida");
+            } 
+            
+     
+    }
+}
