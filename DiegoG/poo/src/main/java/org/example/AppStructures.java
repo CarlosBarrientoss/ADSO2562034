@@ -2,7 +2,7 @@ package org.example;
 
 import org.example.estructurasDeControl.Conditionals;
 
-public class AppConditionals {
+public class AppStructures {
     public static void main(String[] args) {
 
         Conditionals conditionals = new Conditionals();
@@ -10,6 +10,6 @@ public class AppConditionals {
         //conditionals.elseIf();
         //conditionals.stations();
         //conditionals.fruits();
-        /conditionals.password();
+        //conditionals.password();
     }
 }
